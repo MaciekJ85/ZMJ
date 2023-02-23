@@ -13,9 +13,12 @@ ENDCLASS.
 
 
 
-CLASS ZCL_CORRESPONDING_MJ IMPLEMENTATION.
+CLASS zcl_corresponding_mj IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
+
+    out->write( data   = `TEST` )->write( 'NEW' ).
+
   ENDMETHOD.
 ENDCLASS.
